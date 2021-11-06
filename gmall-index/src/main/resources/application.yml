@@ -1,0 +1,16 @@
+server:
+  port: 18087
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  redis:
+    host: 192.168.56.10
+  rabbitmq:
+    host: 192.168.56.10
+    listener:
+      simple:
+        prefetch: 1
+        acknowledge-mode: manual
+    publisher-returns: true
